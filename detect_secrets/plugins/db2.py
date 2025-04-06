@@ -3,6 +3,9 @@ import re
 import subprocess
 import sys
 
+if os.name == 'nt':
+    os.add_dll_directory('C:\\Program Files\\IBM\\SQLLIB\\BIN')
+    os.environ['DB2CODEPAGE'] = '1208'
 try:
     import ibm_db
 except ImportError as ie:  # pragma: no cover
