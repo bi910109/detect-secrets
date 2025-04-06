@@ -77,7 +77,7 @@ class GheDetector(RegexBasedDetector):
 
     def verify(self, token, *args, **kwargs):
         try:
-            if type(token) == bytes:
+            if type(token) is bytes:
                 token = token.decode('UTF-8')
             headers = {'Authorization': 'token %s' % token}
             response = requests.get(f'https://{self.ghe_instance}/api/v3', headers=headers)
