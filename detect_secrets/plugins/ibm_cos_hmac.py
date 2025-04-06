@@ -107,7 +107,7 @@ def query_ibm_cos_hmac(
     request_parameters = ''
 
     # assemble the standardized request
-    time = datetime.datetime.utcnow()
+    time = datetime.datetime.now(datetime.timezone.utc)
     timestamp = time.strftime('%Y%m%dT%H%M%SZ')
     datestamp = time.strftime('%Y%m%d')
 

@@ -258,7 +258,7 @@ class HexHighEntropyStringsWithStandardEntropy(HexHighEntropyString):
     def __init__(self, *args, **kwargs):
         super(HexHighEntropyStringsWithStandardEntropy, self).__init__(
             *args,
-            **kwargs
+            **kwargs,
         )
 
     def calculate_shannon_entropy(self, data):
