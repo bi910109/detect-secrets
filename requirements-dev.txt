@@ -17,3 +17,4 @@ boxsdk[jwt]<4.0.0
 pyahocorasick
 tabulate
 binaryornot
+chardet>=3.0.2,<7.0.0
